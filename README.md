@@ -1,10 +1,15 @@
-# Laravel + Unstyled Blade Starter Kit
+# daisy-blade-starter-kit
 
-## Introduction
+## 📌 Description
 
-Our Laravel + Unstyled Blade starter kit provides a lightweight and flexible foundation for building Laravel applications with Blade, without any predefined styles.
-It includes a built-in authentication system and provides unstyled views and layouts, allowing you to customize them as you wish.
-You can install your favorite libraries and CSS frameworks, such as Bootstrap, Tailwind, NES.css, Alpine, etc., or choose not to use any framework at all and design everything from scratch.
+**daisy-blade-starter-kit** is a Laravel Starter kit that includes an authentication system (based on Laravel Breeze) with a UI created using Tailwind v4 and DaisyUI v5.
+
+## Starting Point
+
+This starter kit is based on the [unstyled-blade-starter-kit](https://github.com/javdome/unstyled-blade-starter-kit), with the following additions:
+
+-   **Tailwind CSS v4**
+-   **DaisyUI v5** → UI components built on top of Tailwind. See [daisyui.com](https://daisyui.com/).
 
 ## Installation
 
@@ -12,14 +17,14 @@ You can install your favorite libraries and CSS frameworks, such as Bootstrap, T
 
 One-click install a new application using this starter kit through [Laravel Herd](https://herd.laravel.com):
 
-<a href="https://herd.laravel.com/new?starter-kit=javdome/unstyled-blade-starter-kit"><img src="https://img.shields.io/badge/Install%20with%20Herd-fff?logo=laravel&logoColor=f53003" alt="Install with Herd"></a>
+<a href="https://herd.laravel.com/new?starter-kit=javdome/daisy-blade-starter-kit"><img src="https://img.shields.io/badge/Install%20with%20Herd-fff?logo=laravel&logoColor=f53003" alt="Install with Herd"></a>
 
 ### Via the Laravel Installer
 
 Create a new Laravel application using this starter kit through the official [Laravel Installer](https://laravel.com/docs/12.x/starter-kits#community-maintained-starter-kits):
 
 ```bash
-laravel new my-app --using=javdome/unstyled-blade-starter-kit
+laravel new my-app --using=javdome/daisy-blade-starter-kit
 ```
 
 ## Official Documentation
@@ -36,4 +41,4 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 ## License
 
-The Laravel + Unstyled Blade starter kit is open-sourced software licensed under the MIT license.
+The **daisy-blade-starter-kit** is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
