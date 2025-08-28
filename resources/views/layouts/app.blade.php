@@ -28,7 +28,7 @@
                     </label>
                 </div>
                 <div class="flex-1">
-                    <a href="{{ route('dashboard') }}" class="btn btn-ghost text-xl">TV Tools</a>
+                    <a href="{{ route('dashboard') }}" class="btn btn-ghost text-xl">{{ config('app.name', 'Laravel') }}</a>
                 </div>
                 <div class="flex-none">
                     <div class="dropdown dropdown-end">
@@ -64,7 +64,7 @@
             <!-- Page Heading -->
             @isset($header)
                 <header class="bg-base-200/50 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <div class="py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
                 </header>
@@ -77,13 +77,28 @@
         </div>
         <div class="drawer-side">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-            <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                <!-- Sidebar content here -->
-                <li><a>Dashboard</a></li>
-                <li><a>Videos</a></li>
-                <li><a>Maquetador</a></li>
-                <li><a>Grabadora</a></li>
-            </ul>
+            <div class="p-4 w-80 min-h-full bg-base-200 text-base-content flex flex-col">
+                <div class="p-4">
+                    <a href="{{ route('dashboard') }}">
+                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                    </a>
+                </div>
+                <ul class="menu text-base-content overflow-y-auto">
+                    <!-- Sidebar content here -->
+                    <li><a>Dashboard</a></li>
+                    <li><a>Videos</a></li>
+                    <li>
+                        <details open>
+                            <summary>Maquetador</summary>
+                            <ul>
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a>Grabadora</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
