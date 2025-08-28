@@ -79,24 +79,24 @@
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
             <div class="p-4 w-80 min-h-full bg-base-200 text-base-content flex flex-col">
                 <div class="p-4">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                    <a class="" href="{{ route('dashboard') }}">
+                        <x-application-logo class="mx-auto block h-9 w-auto fill-current text-gray-800" />
                     </a>
                 </div>
                 <ul class="menu text-base-content overflow-y-auto">
                     <!-- Sidebar content here -->
-                    <li><a>Dashboard</a></li>
-                    <li><a>Videos</a></li>
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
                     <li>
                         <details open>
-                            <summary>Maquetador</summary>
+                            <summary>Item 3</summary>
                             <ul>
                                 <li><a>Submenu 1</a></li>
                                 <li><a>Submenu 2</a></li>
                             </ul>
                         </details>
                     </li>
-                    <li><a>Grabadora</a></li>
+                    <li><a>Item 4</a></li>
                 </ul>
             </div>
         </div>
