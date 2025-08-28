@@ -15,7 +15,7 @@
 <body class="min-h-screen font-sans antialiased">
     <div class="drawer lg:drawer-open">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col">
+        <div class="drawer-content flex flex-col min-h-screen">
             <!-- Navbar -->
             <div class="navbar bg-base-100">
                 <div class="flex-none lg:hidden">
@@ -71,9 +71,10 @@
             @endisset
 
             <!-- Page content here -->
-            <main class="p-4">
+            <main class="p-4 flex-grow">
                 {{ $slot }}
             </main>
+            @include('layouts.partials.footer')
         </div>
         <div class="drawer-side">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
