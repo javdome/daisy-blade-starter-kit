@@ -1,7 +1,7 @@
 <x-guest-layout>
     <!-- Session Status -->
     @if (session('status'))
-        <div class="mb-4 font-medium text-sm text-green-600">
+        <div class="mb-4 font-medium text-sm text-success">
             {{ session('status') }}
         </div>
     @endif
@@ -31,13 +31,13 @@
         <div class="block mt-4">
             <label for="remember_me" class="inline-flex items-center">
                 <input id="remember_me" type="checkbox" class="checkbox" name="remember">
-                <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                <span class="ms-2 text-sm text-base-content">{{ __('Remember me') }}</span>
             </label>
         </div>
 
         <div class="flex items-center justify-end mt-4">
             @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                <a class="text-sm link link-hover" href="{{ route('password.request') }}">
                     {{ __('Forgot your password?') }}
                 </a>
             @endif
@@ -48,10 +48,10 @@
         </div>
     </form>
 
-    <div class="mt-4">
-        <p class="text-sm text-gray-600">
+    <div class="mt-4 text-center">
+        <p class="text-sm text-base-content">
             {{ __("Don't have an account?") }}
-            <a class="underline hover:text-gray-900" href="{{ route('register') }}">
+            <a class="link link-hover" href="{{ route('register') }}">
                 {{ __('Sign up') }}
             </a>
         </p>

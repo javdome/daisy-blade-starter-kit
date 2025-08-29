@@ -7,9 +7,9 @@
 
 /* @plugin "daisyui"; */
 /* @plugin "daisyui" {
-themes: light --default, dark --prefersdark;
+    themes: light --default, dark --prefersdark;
 } */
 
 @plugin "daisyui" {
-    themes: light --default;
+    themes: dark --default;
 }
