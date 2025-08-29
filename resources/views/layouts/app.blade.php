@@ -28,7 +28,7 @@
                     </label>
                 </div>
                 <div class="flex-1">
-                    <a href="{{ route('dashboard') }}" class="btn btn-ghost text-xl">{{ config('app.name', 'Laravel') }}</a>
+                    <a href="{{ route('dashboard') }}" class="px-5 font-bold text-xl">{{ config('app.name', 'Laravel') }}</a>
                 </div>
                 <div class="flex-none">
                     <div class="dropdown dropdown-end">
@@ -65,7 +65,9 @@
             @isset($header)
                 <header class="bg-base-200/50 shadow">
                     <div class="py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
+                        <h2 class="font-semibold text-xl text-base-content leading-tight">
+                            {{ $header }}
+                        </h2>
                     </div>
                 </header>
             @endisset
