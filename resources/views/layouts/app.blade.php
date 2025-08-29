@@ -81,7 +81,7 @@
             <div class="p-4 w-80 min-h-full bg-base-200 text-base-content flex flex-col">
                 <div class="p-4">
                     <a class="" href="{{ route('dashboard') }}">
-                        <x-application-logo class="mx-auto block h-9 w-auto fill-current text-gray-800" />
+                        <x-application-logo class="mx-auto block h-9 w-auto fill-current text-base-content" />
                     </a>
                 </div>
                 <ul class="menu text-base-content overflow-y-auto">
@@ -89,7 +89,7 @@
                     <li><a>Item 1</a></li>
                     <li><a>Item 2</a></li>
                     <li>
-                        <details open>
+                        <details>
                             <summary>Item 3</summary>
                             <ul>
                                 <li><a>Submenu 1</a></li>

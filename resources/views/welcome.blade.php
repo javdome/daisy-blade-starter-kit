@@ -27,7 +27,7 @@
 
             <div class="hero">
                 <div class="hero-content text-center">
-                    <div class="max-w-md">
+                    <div class="max-w-xl">
                         <h1 class="text-5xl font-bold">Welcome to Laravel</h1>
                         <p class="py-6">Laravel authentication scaffolding with Blade, Tailwind (v4) and DaisyUI (v5).</p>
                     </div>
