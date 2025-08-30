@@ -1,11 +1,13 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "javdome/unstyled-blade-starter-kit",
+    "name": "javdome/daisy-blade-starter-kit",
     "type": "project",
-    "description": "A basic Laravel Blade starter kit with no CSS framework",
+    "description": "A Laravel Starter kit that includes an authentication system with a UI created using DaisyUI v5.",
     "keywords": [
         "laravel",
-        "framework"
+        "framework",
+        "starter kit",
+        "daisyui"
     ],
     "license": "MIT",
     "require": {
